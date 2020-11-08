@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">24dp</dimen>
+    <dimen name="margin_distance">8dp</dimen>
+    <dimen name="bmi_text_size">24sp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="text_margin">48dp</dimen>
+</resources>
