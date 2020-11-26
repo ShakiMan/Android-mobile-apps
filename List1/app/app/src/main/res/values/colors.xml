@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorStarvation">#082E79</color>
+    <color name="colorEmaciation">#4169E1</color>
+    <color name="colorUnderweight">#ACE1AF</color>
+    <color name="colorWantedWeight">#CDBEA7</color>
+    <color name="colorOverweight">#FFFF99</color>
+    <color name="colorFirstDegreeObesity">#FDE456</color>
+    <color name="colorSecondDegreeObesity">#CF2929</color>
+    <color name="colorThirdDegreeObesity">#801818</color>
+    <color name="text_color">#5175E1</color>
+    <color name="help_background">#7D8CB8</color>
+</resources>

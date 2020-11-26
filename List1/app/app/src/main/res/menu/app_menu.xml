@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bmi_cm_kg"
+        android:title="@string/bmi_for_cm_kg" />
+    <item android:id="@+id/bmi_lb_in"
+        android:title="@string/bmi_for_lb_in" />
+    <item
+        android:id="@+id/history"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="@string/history"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/clear_history"
+        android:title="@string/clear_data"/>
+    <item android:id="@+id/help"
+        android:title="@string/help_title"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="ifRoom" />
+</menu>

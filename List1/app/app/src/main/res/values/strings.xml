@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="mass_kg">Mass [kg]</string>
+    <string name="count_bmi">Count BMI</string>
+    <string name="empty_value">0.00</string>
+    <string name="height_is_empty">Please provide value.</string>
+    <string name="mass_is_empty">Please provide value.</string>
+    <string name="mass_wrong_value_europe">Value should be between 30 and 400 [kg].</string>
+    <string name="height_wrong_value_europe">Value should be between 100 and 250 [cm].</string>
+    <string name="mass_wrong_value_not_europe">Value should be between 66 and 880 [lb].</string>
+    <string name="height_wrong_value_not_europe">Value should be between 40 and 98 [in].</string>
+    <string name="height_cm">Height [cm]:</string>
+    <string name="bmi_for_cm_kg">cm/kg</string>
+    <string name="bmi_for_lb_in">lb/in</string>
+    <string name="mass_lb">Mass [lb]</string>
+    <string name="height_in">Height [in]</string>
+    <string name="error_2activity">Ups. Something went wrong.</string>
+    <string name="starvation_description">
+        Starvation is a severe deficiency in caloric energy intake,
+        below the level needed to maintain an organisms life.
+    </string>
+    <string name="emaciation_description">
+        Emaciation is defined as extreme weight loss and unnatural
+        thinness due to a loss of subcutaneous fat (the fatty,
+        or adipose tissue beneath the skin) and muscle throughout the body.
+    </string>
+    <string name="underweight_description">
+        An underweight person is a person whose body weight is considered too low to be healthy.
+    </string>
+    <string name="norm_description">
+        Your weight is OK.
+    </string>
+    <string name="overweight_description">
+        Being overweight or fat is having more body fat than is optimally
+        healthy. Being overweight is especially common where food
+        supplies are plentiful and lifestyles are sedentary.
+    </string>
+    <string name="obesity1_description">
+        Is severe obesity
+        Obesity is a medical condition in which excess body fat has
+        accumulated to an extent that it may have a negative effect on health.
+    </string>
+    <string name="obesity2_description">
+        Is morbid obesity
+        Obesity is a medical condition in which excess body fat has
+        accumulated to an extent that it may have a negative effect on health.
+    </string>
+    <string name="obesity3_description">
+        Is super obesity
+        Obesity is a medical condition in which excess body fat has
+        accumulated to an extent that it may have a negative effect on health.
+    </string>
+    <string name="history">History of measurements</string>
+    <string name="clear_data">Clear history</string>
+    <string name="help_title">Help</string>
+    <string name="help_info">
+        &#160;Welcome in my app!\n\n
+        You can change between european and american units in menu in the right top corner.
+        Current unit will be displayed near the text box.\n\n
+        If you choose european units you have to input weight between 30 and 400 kg,
+        height between 100 and 250 cm.\n\n
+        In american units case you have to input weight between 66 and 880 lb,
+        height between 40 and 98 in.\n\n
+        You can check history of the last ten measurements clicking on the history in menu
+        (icon with clock).\n\n
+        You can also delete history of measurements choosing option Clear history in the menu.
+        After calculating bmi for valid values, you can get more information about your current
+        bmi state just clicking on the text field with result.
+    </string>
+</resources>
