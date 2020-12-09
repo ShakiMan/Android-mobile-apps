@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Heroes</string>
+    <string name="unit_image">Unit image</string>
+    <string name="unit_title">Title</string>
+    <string name="unit_category">Category</string>
+    <string name="castle_category_button_text">Castle</string>
+    <string name="rampart_category_button_text">Rampart</string>
+    <string name="dungeon_category_button_text">Dungeon</string>
+    <string name="favourite_category_button_text">Favourite</string>
+    <string name="all_units_button">All</string>
+    <string name="unit_stats_image">Unit Stats Image</string>
+    <string name="details">Details</string>
+    <string name="first_gallery_image">First gallery image</string>
+    <string name="second_gallery_image">Second gallery image</string>
+    <string name="third_gallery_image">Third gallery image</string>
+    <string name="facts">Facts</string>
+
+    <string name="angel_description">
+        The angel is the seventh-level creature for the Castle fraction
+        in Heroes of Might and Magic III. It can be recruited from the
+        portal of glory. The angel can be upgraded to the archangel.
+        With a devastating attack and high speed, the angel can strike
+        the enemy where its weakest, or take on their strongest units.
+        A powerful unit that is well worth the high cost. They also
+        increased damage against devils and arch devils.</string>
+    <string name="archer_description">Archer des</string>
+    <string name="centaur_description">Centaur des</string>
+    <string name="green_dragon_description">Green dragon des</string>
+    <string name="griffin_description">Griffin des</string>
+    <string name="manticore_description">Manticore des</string>
+    <string name="minotaur_description">Minotaur des</string>
+    <string name="red_dragon_description">Red dragon des</string>
+    <string name="wood_elf_description">Wood elf des</string>
+
+    <string name="angel_facts">
+        &#160;* With their great offensive and defensive power and flying ability,
+        angels  are among the mightiest creatures in the game. They do 150%
+        damage when attacking devils.\n
+        * In an interview with Greg Fulton, the lead designer of HoMM3, it was
+        stated by him that the Angels and Archangels are robots created by the
+        Ancients to exterminate Kreegans.\n
+        * All units in army gains +1 morale when there is an angel in army.
+    </string>
+    <string name="archer_facts">Archer facts</string>
+    <string name="centaur_facts">Centaur facts</string>
+    <string name="green_dragon_facts">Green dragon facts</string>
+    <string name="griffin_facts">Griffin facts</string>
+    <string name="manticore_facts">Manticore facts</string>
+    <string name="minotaur_facts">Minotaur facts</string>
+    <string name="red_dragon_facts">Red dragon facts</string>
+    <string name="wood_elf_facts">Wood elf facts</string>
+    <string name="facts_title">Facts</string>
+
+</resources>

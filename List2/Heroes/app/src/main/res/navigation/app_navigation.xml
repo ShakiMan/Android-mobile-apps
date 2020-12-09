@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/unitsListFragment">
+
+    <fragment
+        android:id="@+id/unitsListFragment"
+        android:name="com.example.heroes.ui.unitsList.UnitsListFragment"
+        android:label="units_list_fragment"
+        tools:layout="@layout/units_list_fragment" >
+        <action
+            android:id="@+id/action_unitsListFragment_to_unitsDetailsFragment"
+            app:destination="@id/unitsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unitsDetailsFragment"
+        android:name="com.example.heroes.ui.details.UnitsDetailsFragment"
+        android:label="units_details_fragment"
+        tools:layout="@layout/units_details_fragment" >
+        <action
+            android:id="@+id/action_unitsDetailsFragment_to_unitsListFragment"
+            app:destination="@id/unitsListFragment" />
+    </fragment>
+</navigation>

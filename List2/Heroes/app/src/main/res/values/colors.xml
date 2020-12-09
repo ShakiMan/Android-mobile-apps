@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#505150</color>
+    <color name="colorPrimaryDark">#2C2C2C</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorDungeon">#D83232</color>
+    <color name="colorRampart">#21A312</color>
+    <color name="colorCastle">#3B69F1</color>
+    <color name="listBackground">#989696</color>
+    <color name="buttonColor">#0F238A</color>
+    <color name="buttonTextColor">#E8EFAF</color>
+    <color name="screensBackground">#989696</color>
+</resources>
