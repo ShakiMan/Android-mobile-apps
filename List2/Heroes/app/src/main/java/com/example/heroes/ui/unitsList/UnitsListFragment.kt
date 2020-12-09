@@ -61,6 +61,7 @@ class UnitsListFragment : Fragment() {
 
         allCategoryBTN.setOnClickListener {
             viewModel.setToShowUnitsList(viewModel.getAllUnitsList())
+            viewModel.setOnlyFavourites(false)
             unitsListAdapter.submitData(viewModel)
         }
         
@@ -77,6 +78,7 @@ class UnitsListFragment : Fragment() {
         }
 
         favouriteCategoryBTN.setOnClickListener {
+
             filterTheListFavourite()
         }
     }
@@ -91,6 +93,7 @@ class UnitsListFragment : Fragment() {
             }
         }
 
+        viewModel.setOnlyFavourites(true)
         viewModel.setToShowUnitsList(newList)
         unitsListAdapter.submitData(viewModel)
     }
@@ -108,6 +111,7 @@ class UnitsListFragment : Fragment() {
                 }
             }
 
+            viewModel.setOnlyFavourites(false)
             viewModel.setToShowUnitsList(newList)
             unitsListAdapter.submitData(viewModel)
         }

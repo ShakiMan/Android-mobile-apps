@@ -14,24 +14,91 @@
     <string name="second_gallery_image">Second gallery image</string>
     <string name="third_gallery_image">Third gallery image</string>
     <string name="facts">Facts</string>
+    <string name="facts_title">Facts:</string>
 
+    <!-- Descriptions: -->
     <string name="angel_description">
-        The angel is the seventh-level creature for the Castle fraction
+        The angel is the seventh-level creature for the Castle faction
         in Heroes of Might and Magic III. It can be recruited from the
         portal of glory. The angel can be upgraded to the archangel.
         With a devastating attack and high speed, the angel can strike
-        the enemy where its weakest, or take on their strongest units.
+        the enemy where it\'s weakest, or take on their strongest units.
         A powerful unit that is well worth the high cost. They also
         increased damage against devils and arch devils.</string>
-    <string name="archer_description">Archer des</string>
-    <string name="centaur_description">Centaur des</string>
-    <string name="green_dragon_description">Green dragon des</string>
-    <string name="griffin_description">Griffin des</string>
-    <string name="manticore_description">Manticore des</string>
-    <string name="minotaur_description">Minotaur des</string>
-    <string name="red_dragon_description">Red dragon des</string>
-    <string name="wood_elf_description">Wood elf des</string>
+    <string name="archer_description">
+        The archer is the second-level unit of the Castle faction in Heroes of Might and Magic III.
+        It can be recruited from the archers\' tower. The archer can be upgraded to the marksman.\n
+        The archer is very useful as the basic ranged unit of the Castle, doing decent damage.
+        Sending Heroes out with some archers for damage and pikemen for protection will allow them
+        to capture mines early in the game.
+    </string>
+    <string name="centaur_description">
+        The centaur is a first-tier creature of the Rampart faction in Heroes of Might and Magic
+        III. It can be recruited from the centaur stables. The centaur can be upgraded to the
+        centaur captain.\n
+        The creatures resemble a half man, half horse hybrid. With good stats, centaurs are well
+        worth the cost, and are assured a place in most Rampart armies.
+    </string>
+    <string name="green_dragon_description">
+        The green dragon is the seventh-tier creature of the Rampart faction in Heroes of Might and
+        Magic III. It can be recruited from the dragon cliffs. The green dragon can be upgraded to
+        the gold dragon.\n
+        As the most powerful creatures in the Rampart town, dragons should be purchased whenever
+        there\'s resources for it. As a fast flyer with high stats, it can cause great damage, and
+        the immunity to third-level and lower spells makes it harder to remove from combat. The
+        green dragon is a powerful unit, and deserves its place in any Rampart army that can afford
+        its price.
+    </string>
+    <string name="griffin_description">
+        The griffin is the third-level unit of the Castle faction in Heroes of Might and Magic
+        III. It can be recruited at the griffin tower. The griffin can be upgraded to the royal
+        griffin.\n
+        As a flying unit with decent speed, the griffin is great for hitting the weakest parts of
+        the enemy army. It can also retaliate twice a round, usually making enemies think twice
+        before attacking it.\n
+        Like most third-level creatures, however, it has too few hit points to stand on its own
+        for too long, and should remain close to the rest of the army, unless they massively
+        outnumber the enemy.
+    </string>
+    <string name="manticore_description">
+        The manticore is the sixth-level creature of the Dungeon faction in Heroes of Might and
+        Magic III. It can be recruited from the manticore lair. The manticore can be upgraded to
+        the scorpicore.\n
+        Manticores and their venomous cousins, the scorpicores, have features combined of bat,
+        lion and scorpion. They attack with stabs from their stinging tails.\n
+        A strong flying unit that can strike the enemies of the Dungeon army, the manticore
+        is a fearsome predator.
+    </string>
+    <string name="minotaur_description">
+        The minotaur is the fifth-level creature of the Dungeon faction in Heroes of Might and
+        Magic III. It can be found at the labyrinth. The minotaur can be upgraded to the minotaur
+        king.\n
+        Minotaurs and minotaur kings live in labyrinths and devour all who enter. These bull-like
+        humanoids are sure of their ability to dominate in battle and have good morale. This self
+        image is well-founded as they are durable and have a very damaging axe attack.\n
+        They are one of the main forces of the Dungeon, aside from the Red and Black Dragons,
+        mainly because of their specialty, high stats, and especially because of their damage that
+        is comparable to a level 6\'s.
+    </string>
+    <string name="red_dragon_description">
+        The red dragon is the seventh-tier creature of the Dungeon faction in Heroes of Might and
+        Magic III. It can be recruited from the dragon cave. The red dragon can be upgraded to the
+        black dragon.\n
+        Red dragons are powerful creatures, capable of fighting off armies. It has great damage,
+        and with an immunity to spells of third level or lower, most spellcasters are powerless
+        against it. Targeting its breath attack to hurt more than one unit can double its total
+        damage.
+    </string>
+    <string name="wood_elf_description">
+        The wood elf is the third-tier creature of the Rampart faction in Heroes of Might and
+        Magic III. It can be recruited from the homestead. The wood elf can be upgraded to the
+        grand elf.\n
+        As the only ranged Rampart creature, the wood elf provides some much-needed support to
+        the front-line fighters. Their attack and damage is decent, but like most ranged creatures,
+        they\'re vulnerable and should be protected.
+    </string>
 
+    <!-- Facts: -->
     <string name="angel_facts">
         &#160;* With their great offensive and defensive power and flying ability,
         angels  are among the mightiest creatures in the game. They do 150%
@@ -41,14 +108,93 @@
         Ancients to exterminate Kreegans.\n
         * All units in army gains +1 morale when there is an angel in army.
     </string>
-    <string name="archer_facts">Archer facts</string>
-    <string name="centaur_facts">Centaur facts</string>
-    <string name="green_dragon_facts">Green dragon facts</string>
-    <string name="griffin_facts">Griffin facts</string>
-    <string name="manticore_facts">Manticore facts</string>
-    <string name="minotaur_facts">Minotaur facts</string>
-    <string name="red_dragon_facts">Red dragon facts</string>
-    <string name="wood_elf_facts">Wood elf facts</string>
-    <string name="facts_title">Facts</string>
+    <string name="archer_facts">
+        &#160;* Archers are lightly armored troops armed with crossbows for ranged attacks and
+        daggers for light hand-to-hand fighting.\n
+        * Valeska the Knight has archers as a specialty, which increases the attack and defense
+        skills of any archer or marksman each level she attains after the 2nd level, and gives them
+        a speed bonus of 1.\n
+        * Gelu the Ranger can upgrade Elves and Wood Elves (also Archers and Marksmen) into
+        Sharpshooters.\n
+        * It should still be one of the first units to be upgraded - the extra shot will double
+        its potential damage.
+    </string>
+    <string name="centaur_facts">
+        &#160;* Armed with sturdy spears and possessed of good speed and attack ratings, the
+        centaur and centaur captains are perhaps the best basic foot soldier units in the game.
+        While they are also the most expensive basic unit, their abilities and durability keep them
+        useful for longer than most.\n
+        * While two hex units are normally a liability later on, the Centaurs\' bulkiness makes for
+        excellent blocker units in the early game and during siege defense. Consider combining
+        Centaurs with Wood Elves/Grand Elves for clearing out wandering creatures in your starting
+        area.
+    </string>
+    <string name="green_dragon_facts">
+        &#160;* Mutare and Mutare Drake are specialists in green dragons, and give them +5 to
+        Attack and Defense.\n
+        * Vial of Dragon Blood gives +5 to Attack and Defense to green dragons\n
+        * Placing Green Dragons (as well as any living Dragons) in the Skeleton Transformer
+        will give you Bone Dragons instead of regular Skeletons.\n
+        * While not getting such an immense bonus from skills, like creatures as Titans do, there
+        are still some good skills to take in consideration. Armorer is a very good to choice to
+        keep the dragons\' numbers up, while Tactics allows more friendly troops to assist the
+        dragons easily, even if not a necessary skill to have for a Rampart army, due to its high
+        speed. Offense is, as usual, a nice skill to have, especially with the dragons\' Breath
+        attack.\n
+        * Green Dragon was the base dragon creature of the Dungeon equivalent faction in Heroes of
+        Might and Magic II, which was upgraded two times to Red and then Black Dragon.
+    </string>
+    <string name="griffin_facts">
+        &#160;* Edric the Knight has griffins as a specialty, which increases the attack and
+        defense skills of any griffins for each level attained after 3rd level, and gives them a
+        speed bonus of 1.\n
+        * Griffin bastion is a special building of Castle town. It increases the growth of Griffins
+        and Royal Griffins by 3 per week.
+    </string>
+    <string name="manticore_facts">
+        &#160;* Synca the Overlord has manticores as a specialty, which increases the attack and
+        defense skills of any manticores or scorpicores for each level attained after 6th level and
+        gives them a speed bonus of 1.\n
+        * Because of their low stats for a level 6 creature, especially in health, two Minotaurs
+        are considered to be a better deal than one Manticore, at the same cost with double the
+        damage and more health. For that reason, Manticores and Scorpicores are mainly used to
+        block shooters, paralyze stacks and sometimes soak up retaliations, leaving the dragons and
+        minotaurs to finish off the opponent without receiving damage.
+    </string>
+    <string name="minotaur_facts">
+        &#160;* It is a great frontline fighter, and the minotaur always has positive morale.\n
+        * Dace the Overlord has minotaurs as a specialty, which increases the attack and defense
+        skills of any minotaurs or minotaur kings for each level attained after 5th level and gives
+        them a speed bonus of 1.\n
+        * In one of the Armageddon\'s Blade teasers, the Minotaur was shown together with an
+        electricity-shooting Ogre and ranged Goblins. The cause for this was because the teaser was
+        supposed to include the Forge version of these creatures, the Minotaur bearing a jetpack on
+        his back and the Ogre a rocket launcher or bazooka. However, due to fan backlash, they had
+        to change the Forge creatures into "regular" creatures, and so the teaser became somewhat
+        off-topic with ranged Goblins, a Minotaur and an Ogre guarding the so-called Varn 1904
+        Vault where the Armageddon\'s Blade was kept.
+        * Minotaur\'s positive morale ability can be affected only with Cursed Ground magical
+        terrain or Spirit of Oppression artifact. Their morale cannot be decreased below +1 by the
+        Sorrow spell, Holy Ground magical terrain effect, the morale forfeit for units from
+        different towns or undead in the army, Bone and Ghost Dragon ability, any morale decreasing
+        map objects effects and anti-morale artifacts in Horn of the Abyss.
+    </string>
+    <string name="red_dragon_facts">
+        &#160;* Mutare and Mutare Drake are specialists in red dragons, and give them +5 to Attack
+        and Defense.\n
+        * Vial of Dragon Blood gives +5 to Attack and Defense to red dragons\n
+        * Placing Red Dragons (as well as any living Dragons) in the Skeleton Transformer will
+        give you Bone Dragons instead of regular Skeletons.\n
+        * Immune to spells level 1–3
+    </string>
+    <string name="wood_elf_facts">
+        &#160;* Ivor the Ranger has elves as a specialty, which increases the Attack and Defense
+        skills of any Wood Elves or Grand Elves for each level attained after 3rd level, and gives
+        them a speed bonus of 1.\n
+        * Gelu the Ranger can upgrade Elves and Wood Elves (also Archers and Marksmen) into
+        Sharpshooters.\n
+        * The AI really likes to target the Elves. When conquering a city it is advisable to leave
+        the Elves behind to avoid losses to the towers.
+    </string>
 
 </resources>

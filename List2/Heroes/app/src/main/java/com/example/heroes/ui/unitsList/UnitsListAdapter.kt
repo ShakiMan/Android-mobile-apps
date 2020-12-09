@@ -76,6 +76,7 @@ class UnitsListAdapter : RecyclerView.Adapter<UnitsListAdapter.UnitsListViewHold
                     changeFavouriteButtonColor(unitData)
                     if (viewModel.getOnlyFavourites()){
                         unitsToShowList = removeNotFavourites(unitsToShowList)
+                        notifyDataSetChanged()
                     }
                     viewModel.setToShowUnitsList(unitsToShowList)
                 }
@@ -95,17 +96,14 @@ class UnitsListAdapter : RecyclerView.Adapter<UnitsListAdapter.UnitsListViewHold
             when (category) {
                 "Castle" -> {
                     itemView.background = getDrawable (itemView.context ,R.drawable.casle)
-                    //itemView.setBackgroundResource(R.color.colorCastle)
                     itemView.background.alpha = 55
                 }
                 "Rampart" -> {
                     itemView.background = getDrawable(itemView.context ,R.drawable.rampart)
-                    //itemView.setBackgroundResource(R.color.colorRampart)
                     itemView.background.alpha = 55
                 }
                 "Dungeon" -> {
                     itemView.background = getDrawable(itemView.context, R.drawable.dungeon)
-                    //itemView.setBackgroundResource(R.color.colorDungeon)
                     itemView.background.alpha = 55
                 }
             }

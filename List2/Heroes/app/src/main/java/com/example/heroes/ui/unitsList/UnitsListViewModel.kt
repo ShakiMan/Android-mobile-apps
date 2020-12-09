@@ -8,8 +8,8 @@ import com.example.heroes.dataModels.UnitData
 
 class UnitsListViewModel : ViewModel() {
     private var allUnits: MutableList<UnitData> = UnitsDataSource().createDataSet()
-    //private var toShowUnits: MutableList<UnitData>? = null
     private val toShowUnits: MutableLiveData<MutableList<UnitData>>? = MutableLiveData()
+    private val favouritesUnits: MutableLiveData<MutableList<UnitData>> = MutableLiveData()
     private var onlyFavourite: Boolean = false
 
     fun getAllUnitsList(): MutableList<UnitData> {
@@ -36,8 +36,20 @@ class UnitsListViewModel : ViewModel() {
         return onlyFavourite
     }
 
-    fun setOnlyFavourites(favourites: Boolean){
-        onlyFavourite = favourites
+    fun setOnlyFavourites(boolean: Boolean){
+        onlyFavourite = boolean
+    }
+
+    fun getFavourites(): MutableList<UnitData>? {
+        return favouritesUnits.value?.toMutableList()
+    }
+
+    fun setFavourites() {
+        allUnits.forEach(){
+            if (it.favourite){
+                favouritesUnits.value?.add(it)
+            }
+        }
     }
 
     fun removeUnit(unitData: UnitData){
