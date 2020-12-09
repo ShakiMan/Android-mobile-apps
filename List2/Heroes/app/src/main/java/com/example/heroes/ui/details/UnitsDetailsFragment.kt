@@ -10,10 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.heroes.R
 import com.example.heroes.dataLoaders.UnitsDataSource
-import com.example.heroes.ui.details.viewPager.ViewPagerFragment
-import kotlinx.android.synthetic.main.description_screen_fragment.*
 import kotlinx.android.synthetic.main.units_details_fragment.*
-import kotlinx.android.synthetic.main.units_list_item.*
 
 class UnitsDetailsFragment : Fragment() {
     private lateinit var viewModel: UnitsDetailsViewModel

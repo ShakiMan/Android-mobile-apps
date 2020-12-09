@@ -1,16 +1,15 @@
 package com.example.heroes.ui.details.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.heroes.R
 import com.example.heroes.dataLoaders.UnitsDataSource
 import com.example.heroes.ui.details.UnitsDetailsViewModel
 import kotlinx.android.synthetic.main.facts_list_screen_fragment.*
-import kotlinx.android.synthetic.main.facts_list_screen_fragment.view.*
 import java.util.*
 
 class FactsListScreenFragment : Fragment() {
@@ -39,8 +38,7 @@ class FactsListScreenFragment : Fragment() {
     }
 
     private fun matchFacts(name: String): Int {
-        val str = name
-        return when (str.toLowerCase(Locale.ROOT)) {
+        return when (name.toLowerCase(Locale.ROOT)) {
             "angel" -> R.string.angel_facts
             "archer" -> R.string.archer_facts
             "centaur" -> R.string.centaur_facts

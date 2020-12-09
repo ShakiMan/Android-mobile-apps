@@ -1,10 +1,10 @@
 package com.example.heroes.ui.details.viewPager
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.heroes.R
 import com.example.heroes.ui.details.UnitsDetailsViewModel
@@ -57,12 +57,5 @@ class ViewPagerFragment : Fragment() {
 
         view?.screensViewPager?.adapter = adapter
     }
-
-    fun setData(){
-        descriptionScreenFragment.setUnitName(viewModel.getUnitName())
-        galleryScreenFragment.setUnitName(viewModel.getUnitName())
-        factsListScreenFragment.setUnitName(viewModel.getUnitName())
-    }
-
 
 }

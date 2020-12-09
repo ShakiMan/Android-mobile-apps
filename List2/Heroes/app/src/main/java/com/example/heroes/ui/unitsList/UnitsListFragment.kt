@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +17,7 @@ class UnitsListFragment : Fragment() {
 
     private lateinit var viewModel: UnitsListViewModel
     private lateinit var unitsListAdapter: UnitsListAdapter
-    private  var activeFilter: String = ""
+    private var activeFilter: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -55,7 +54,7 @@ class UnitsListFragment : Fragment() {
         itemTouchHelper.attachToRecyclerView(unitsRV)
         setListData()
 
-        viewModel.getToShowUnitsListLiveData()?.observe(viewLifecycleOwner, Observer {
+        viewModel.getToShowUnitsListLiveData()?.observe(viewLifecycleOwner, {
             setListData()
         })
 
@@ -64,7 +63,7 @@ class UnitsListFragment : Fragment() {
             viewModel.setOnlyFavourites(false)
             unitsListAdapter.submitData(viewModel)
         }
-        
+
         castleCategoryBTN.setOnClickListener {
             filterTheList("Castle")
         }
@@ -88,7 +87,7 @@ class UnitsListFragment : Fragment() {
         val newList = mutableListOf<UnitData>()
 
         allUnitsList.forEach {
-            if (it.favourite){
+            if (it.favourite) {
                 newList.add(it)
             }
         }

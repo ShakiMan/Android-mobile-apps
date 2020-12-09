@@ -34,8 +34,7 @@ class DescriptionScreenFragment : Fragment() {
     }
 
     private fun matchDescription(name: String): Int {
-        val str = name
-        return when (str.toLowerCase(Locale.ROOT)) {
+        return when (name.toLowerCase(Locale.ROOT)) {
             "angel" -> R.string.angel_description
             "archer" -> R.string.archer_description
             "centaur" -> R.string.centaur_description

@@ -74,7 +74,7 @@ class UnitsListAdapter : RecyclerView.Adapter<UnitsListAdapter.UnitsListViewHold
                 favoriteBTN.setOnClickListener {
                     unitData.favourite = !unitData.favourite
                     changeFavouriteButtonColor(unitData)
-                    if (viewModel.getOnlyFavourites()){
+                    if (viewModel.getOnlyFavourites()) {
                         unitsToShowList = removeNotFavourites(unitsToShowList)
                         notifyDataSetChanged()
                     }
@@ -95,11 +95,11 @@ class UnitsListAdapter : RecyclerView.Adapter<UnitsListAdapter.UnitsListViewHold
         private fun setItemBackground(category: String) {
             when (category) {
                 "Castle" -> {
-                    itemView.background = getDrawable (itemView.context ,R.drawable.casle)
+                    itemView.background = getDrawable(itemView.context, R.drawable.casle)
                     itemView.background.alpha = 55
                 }
                 "Rampart" -> {
-                    itemView.background = getDrawable(itemView.context ,R.drawable.rampart)
+                    itemView.background = getDrawable(itemView.context, R.drawable.rampart)
                     itemView.background.alpha = 55
                 }
                 "Dungeon" -> {

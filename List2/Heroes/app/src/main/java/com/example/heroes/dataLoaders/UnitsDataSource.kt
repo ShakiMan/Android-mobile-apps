@@ -1,9 +1,7 @@
 package com.example.heroes.dataLoaders
 
-import com.example.heroes.R
 import com.example.heroes.dataModels.UnitData
 import java.util.*
-import kotlin.collections.ArrayList
 
 class UnitsDataSource {
 
@@ -11,7 +9,7 @@ class UnitsDataSource {
 
     fun getUnitByName(unitName: String?): UnitData {
         val unitsList = createDataSet()
-        unitsList.forEach() {
+        unitsList.forEach {
             if (it.name == unitName)
                 return it
         }
@@ -19,9 +17,8 @@ class UnitsDataSource {
     }
 
     fun getImagesUrlByName(unitName: String?): ArrayList<String> {
-        val str = unitName
         val imagesList = arrayListOf<String>()
-        when(str?.toLowerCase(Locale.ROOT)) {
+        when (unitName?.toLowerCase(Locale.ROOT)) {
             "angel" -> {
                 imagesList.add("https://user-images.githubusercontent.com/49079073/100396368-fc13d680-3044-11eb-8144-f57352375d90.jpg")
                 imagesList.add("https://user-images.githubusercontent.com/49079073/100396369-fcac6d00-3044-11eb-90be-2395590f00ed.jpg")
@@ -80,8 +77,7 @@ class UnitsDataSource {
     }
 
     fun getStatsImageByName(unitName: String?): String {
-        val str = unitName
-        return when(str?.toLowerCase(Locale.ROOT)){
+        return when (unitName?.toLowerCase(Locale.ROOT)) {
             "angel" -> "https://user-images.githubusercontent.com/49079073/100396371-fcac6d00-3044-11eb-9286-716342f11686.jpg"
             "archer" -> "https://user-images.githubusercontent.com/49079073/100396292-ee5e5100-3044-11eb-9cd9-90a0801d8a60.jpg"
             "centaur" -> "https://user-images.githubusercontent.com/49079073/100396302-f0281480-3044-11eb-98cd-6a98f42a0900.jpg"
