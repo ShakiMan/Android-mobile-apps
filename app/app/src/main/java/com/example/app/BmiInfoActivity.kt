@@ -3,6 +3,7 @@ package com.example.app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.app.dataForBmi.DataForBmi
 import kotlinx.android.synthetic.main.activity_bmi_info.*
 
 class BmiInfoActivity : AppCompatActivity() {
@@ -20,42 +21,42 @@ class BmiInfoActivity : AppCompatActivity() {
 
     private fun match(bmi: Double) {
         when {
-            bmi < 16 -> {
+            bmi < DataForBmi.seBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorStarvation))
                 imageViewBmi.setImageResource(R.drawable.mass_deficit)
                 textDescription.text = getString(R.string.starvation_description)
             }
-            bmi >= 16 && bmi < 17 -> {
+            bmi >= DataForBmi.seBorder && bmi < DataForBmi.euBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorEmaciation))
                 imageViewBmi.setImageResource(R.drawable.mass_deficit)
                 textDescription.text = getString(R.string.emaciation_description)
             }
-            bmi >= 17 && bmi < 18.5 -> {
+            bmi >= DataForBmi.euBorder && bmi < DataForBmi.uwBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorUnderweight))
                 imageViewBmi.setImageResource(R.drawable.underweight)
                 textDescription.text = getString(R.string.underweight_description)
             }
-            bmi >= 18.5 && bmi < 25 -> {
+            bmi >= DataForBmi.uwBorder && bmi < DataForBmi.woBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorWantedWeight))
                 imageViewBmi.setImageResource(R.drawable.norm)
                 textDescription.text = getString(R.string.norm_description)
             }
-            bmi >= 25 && bmi < 30 -> {
+            bmi >= DataForBmi.woBorder && bmi < DataForBmi.ofBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorOverweight))
                 imageViewBmi.setImageResource(R.drawable.overweight)
                 textDescription.text = getString(R.string.overweight_description)
             }
-            bmi >= 30 && bmi < 35 -> {
+            bmi >= DataForBmi.ofBorder && bmi < DataForBmi.fsBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorFirstDegreeObesity))
                 imageViewBmi.setImageResource(R.drawable.obesity1)
                 textDescription.text = getString(R.string.obesity1_description)
             }
-            bmi >= 35 && bmi < 40 -> {
+            bmi >= DataForBmi.fsBorder && bmi < DataForBmi.stBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorSecondDegreeObesity))
                 imageViewBmi.setImageResource(R.drawable.obesity2)
                 textDescription.text = getString(R.string.obesity2_description)
             }
-            bmi > 40 -> {
+            bmi > DataForBmi.stBorder -> {
                 newActivityBmi.setTextColor(getColor(R.color.colorThirdDegreeObesity))
                 imageViewBmi.setImageResource(R.drawable.obesity3)
                 textDescription.text = getString(R.string.obesity3_description)

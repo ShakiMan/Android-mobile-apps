@@ -5,13 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.app.models.BmiData
+import com.example.app.database.BmiData
 import kotlinx.android.synthetic.main.my_row.view.*
 
-class MyAdapter(private var myDataSet: ArrayList<BmiData>) :
-    RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class HistoryAdapter() : RecyclerView.Adapter<HistoryAdapter.MyViewHolder>() {
+    private lateinit var myDataSet: List<BmiData>
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoryAdapter.MyViewHolder {
         return MyViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.my_row, parent, false)
         )
@@ -23,30 +23,29 @@ class MyAdapter(private var myDataSet: ArrayList<BmiData>) :
 
     override fun getItemCount() = myDataSet.size
 
-    class MyViewHolder(item_view: View) : RecyclerView.ViewHolder(item_view) {
-        private val bmiText = item_view.bmi_data_text_view
-        private val massText = item_view.mass_data_text_view
-        private val heightText = item_view.height_data_text_view
-        private val dateText = item_view.date_text_view
+    fun submitList(data: List<BmiData>) {
+        myDataSet = data
+    }
 
+    class MyViewHolder(item_view: View) : RecyclerView.ViewHolder(item_view) {
         private var massUnit: String = ""
         private var heightUnit: String = ""
 
         @SuppressLint("SetTextI18n")
         fun bind(bmiData: BmiData) {
-            if (bmiData.europeanStandard){
+            if (bmiData.europeanStandard) {
                 massUnit = " [kg]"
                 heightUnit = " [m]"
-            }
-            else{
+            } else {
                 massUnit = " [lb]"
                 heightUnit = " [in]"
             }
-
-            bmiText.text = "Bmi: " + bmiData.bmi
-            massText.text = "Mass: "   + bmiData.mass + massUnit
-            heightText.text = "Height: " + bmiData.height + heightUnit
-            dateText.text = "Date: " + bmiData.date
+            itemView.apply {
+                bmi_data_text_view.text = "Bmi: " + bmiData.bmi
+                mass_data_text_view.text = "Mass: " + bmiData.mass + massUnit
+                height_data_text_view.text = "Height: " + bmiData.height + heightUnit
+                date_text_view.text = "Date: " + bmiData.date
+            }
         }
     }
 }
